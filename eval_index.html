@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="eval.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="eval.js" defer="defer"></script>
+    <title>WAVVE</title>
+</head>
+<body>
+    <div id="popup">
+        <div class="popWrap">
+            <div class="popClx">x</div>
+            <div class="popitem">
+                <a href="#">
+                    <img src="images/pop/pop.jpg" alt="">
+                </a>
+            </div>
+            <div class="popInt">
+                <input type="checkbox" name="popinput" >일주일 동안 보지 않기
+            </div>
+        </div><!-- popWrap -->
+    </div><!-- #popup -->
+    <div id="modal">
+        <div class="modalwrap">
+            <a href="#"><p>#태그로 검색하기</p></a>
+            <input type="text" placeholder="      검색어를 입력해 주세요">
+            <div class="contents">
+                <div class="title">
+                    <h2>실시간 인기검색어</h2> 
+                    <button>VOD</button> 
+                    <button>LIVE</button> 
+                    <button>영화</button> 
+                </div>
+                <div class="realtime">
+                    <div class="box">
+                        <span>1</span>
+                        <span>
+                            <a href="#">
+                                미운 우리 새끼
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>2</span>
+                        <span>
+                            <a href="#">
+                                런닝맨
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>3</span>
+                        <span>
+                            <a href="#">
+                                펜트하우스2
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>4</span>
+                        <span>
+                            <a href="#">
+                                슈퍼맨이 돌아왔다
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>5</span>
+                        <span>
+                           <a href="#">
+                               놀면 뭐하니?
+                           </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>6</span>
+                        <span>
+                           <a href="#">
+                               전지적 참견시점
+                           </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>7</span>
+                        <span>
+                            <a href="#">
+                                집사부 일체
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>8</span>
+                        <span>
+                            <a href="#">
+                                나 혼자 산다
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>9</span>
+                        <span>
+                            <a href="#">
+                                구해줘!홈즈
+                            </a>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>10</span>
+                        <span>
+                            <a href="#">
+                                1박2일시즌4
+                            </a>
+                        </span>
+                    </div>
+                </div><!-- realtime -->
+            </div><!-- contents -->
+            <button class="clx">X</button>
+        </div><!-- modalwrap -->
+    </div>
+
+    <header>
+        <div class="top">
+            <div class="topBox">
+                <div class="login">로그인</div>
+                <div class="userTip">이용권</div>
+                <div class="event">이벤트</div>
+            </div>
+        </div>
+    </header>
+    <div class="bottom">
+        <div class="bottomWrap">
+            <div class="logo">
+                <div class="sizing">
+                    <a href="#"><img src="logo/logo.png" alt=""></a>
+                </div>
+            </div>
+            <ul class="nav">
+                <li><a href="#">홈</a></li>
+                <li class="category"><a href="#">카테고리</a>
+                    <ul class="sub">
+                        <li class="total"><a href="#">전체 카테고리 보기</a></li>
+                        <br>
+                        <li class="secsub"><a href="#">추천</a></li>
+                        <li><a href="#">드라마</a></li>
+                        <li><a href="#">예능</a></li>
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">영화플러스</a></li>
+                        <li><a href="#">해외</a></li>
+                        <li><a href="#">original</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">MY</a></li>
+            </ul>
+                <button class="input">
+                    <i class="fas fa-search search"></i>
+                    검색하기
+                </button>
+        </div><!-- bottomWrap -->
+    </div><!-- .bottom -->
+    <!--header-(top, bottom ) -->
+    
+    <main id="mainSlider">
+        <div class="mainWrap">
+            <div class="track">
+                <div class="item one">
+                    <img src="images/slide_main/1.PNG" alt="">
+                </div>
+                <div class="item two">
+                    <img src="images/slide_main/2.PNG" alt="">
+                </div>
+                <div class="item trd">
+                    <img src="images/slide_main/3.PNG" alt="">
+                </div>
+                <div class="item fth">
+                    <img src="images/slide_main/4.PNG" alt="">
+                </div>
+                <div class="item fivth">
+                    <img src="images/slide_main/5.PNG" alt="">
+                </div>
+            </div>
+            <div class="mainbtn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- mainWrap -->
+        <div class="dotBox">
+            <button class="play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="stop">
+                <i class="fas fa-pause"></i>
+            </button>
+            <div class="dot">
+                <div class="dot1 on">
+                    <i class="fas fa-circle on"></i>
+                </div>
+                <div class="dot2">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="dot3">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="dot4">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="dot5">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="dot6">
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+        </div> <!-- dotBox -->
+    </main>
+    <div class="gap"></div>
+    <section id="hot">
+        <div class="title">
+            <div class="titleBox">
+                <h2>지금 핫한 프로그램</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/1.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>슈퍼맨이 돌아왔다</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide1/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+
+        </div><!-- slideWrap -->
+    </section><!-- hot -->
+
+    <!--rec  -->
+    <div class="gap"></div>
+    <section id="rec">
+        <div class="title">
+            <div class="titleBox">
+                <h2>Wavve 추천</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/1.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>porgram explain</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>asdfasdfasfd</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide2/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- slideWrap -->
+    </section><!-- rec -->
+
+    <!-- movie update -->
+    <div class="gap"></div>
+    <section id="update">
+        <div class="title">
+            <div class="titleBox">
+                <h2>Wavvie 영화 업데이트</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/1.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide3/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- slideWrap -->
+    </section><!--movie update -->
+    <!-- adv -->
+    <div class="gap"></div>
+    <div class="adv"></div>
+    <!-- adv -->
+    
+    <!-- latest -->
+    <div class="gap"></div>
+    <section id="latest">
+        <div class="title">
+            <div class="titleBox">
+                <h2>Wavvie 최초공개</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/1.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>널시스</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide4/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- slideWrap -->
+    </section><!--latest -->
+    <!-- ori -->
+    <div class="gap"></div>
+    <section id="latest">
+        <div class="title">
+            <div class="titleBox">
+                <h2>#Wavve #오리지널</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/1.jpg" alt="">
+                    </div>
+                    <div class="program">보쌈-운명을 훔치다</div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide5/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- slideWrap -->
+    </section><!--ori -->
+    <!-- plus -->
+    <div class="gap"></div>
+    <section id="plus">
+        <div class="title">
+            <div class="titleBox">
+                <h2>영화플러스 추천영화</h2>
+            </div>
+            <div class="seeMore">
+                더보기  >
+            </div>
+        </div><!-- .title -->
+        <div class="slideWrap">
+            <div class="s_track">
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/1.jpg" alt="">
+                    </div>
+                    <div class="program">미션 임파서블</div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/2.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/3.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/4.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/5.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/6.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/7.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/8.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/9.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+                <div class="box">
+                    <div class="img_item">
+                        <img src="images/slide6/10.jpg" alt="">
+                    </div>
+                    <div class="program">
+                        <p>미운 우리 새끼</p>    
+                    </div>
+                </div>               
+            </div><!-- s1_track -->
+            <div class="btn">
+                <div class="left">&#8249;</div>
+                <div class="right">&#8250;</div>
+            </div>
+        </div><!-- slideWrap -->
+    </section><!--plus-->
+
+    <div class="gap"></div>
+    <footer>
+        <div class="notice">
+            <div class="noticeWrap">
+                <div class="title">
+                    <a href="aef">
+                        공지사항
+                    </a>
+                </div>
+                <div class="contents">
+                    <p>공지1</p>
+                    <p>공지2</p>
+                    <p>공지3</p>
+                    <p>공지4</p>
+                </div>
+                <button> &#8249; </button>
+                <button> &#8250; </button>
+            </div><!-- noticeWrap -->
+            <div class="secWrap">
+                <div class="box">
+                    <p>회사소개</p>
+                    <p>인재채용</p>
+                    <p>서비스소개</p>
+                    <p>이용약관</p>
+                    <p>개인정보처리방침</p>
+                    <p>고객센터</p>
+                </div>
+                <div class="sns">
+                    <div class="logo"><a href="#">
+                        <img src="logo/footlogo.JPG" alt="">
+                    </a>
+                    </div>
+                    <div class="drop">
+                        <p>
+                            사업자용 웨이브 가입
+                        </p>
+                    </div>
+                    <div class="f">f</div>
+                    <div class="p">n</div>
+                </div>
+            </div>   <!-- secwrap -->
+            <div class="gap"></div>
+            <div class="thrWrap">
+                <div class="footCtn">
+                    <p>콘텐츠웨이브 주식회사| 대표이사 이태현 | 고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</p>
+                    <p>사업자등록번호 220-88-38020 | 통신판매업 신고번호 : 제 2021-서울영등포-0585호 | 통신판매업 정보 공개 : http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</p>
+                    <p>서울특별시 영등포구 여의나루로 60 포스트타워 19층| 전자우편주소 : helpdesk@wavve.com</p>
+                    <br>
+                    <p>Copyright© 콘텐츠웨이브(주) All rights reserved.</p>
+                </div>
+            </div>
+        </div><!-- notice -->
+    </footer>
+
+</body>
+</html>

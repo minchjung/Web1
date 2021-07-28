@@ -1,0 +1,26 @@
+
+*{margin:0 auto; text-decoration: none;}
+body{width: 100%;background-color: burlywood;}
+.wrap{
+    width: 400px;height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.track{
+    width: 800px;
+    border: 3px solid blue;
+    position: relative;
+}
+.track div{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color:#fff;
+    font-size: 4.5em;
+    position: absolute;
+    left: 400px;
+}
+.box1{background-color: burlywood;left:0}
+.box2{background-color: coral;}
+.box3{background-color: crimson;}

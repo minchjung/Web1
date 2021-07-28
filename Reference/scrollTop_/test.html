@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="test.js" defer="defer"></script>
+    <script>
+        //script 참조파일이 존재할시 html내 script 작성요령 =>function!!
+        $(function(){
+            $(".wrap div").click(function(){
+                var i=$(this).index()
+                console.log(i)
+                $(".slidewrap div").eq(i).stop().fadeIn().siblings().fadeOut()
+            })
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="wrap">
+        <div class="box1">C1</div>
+        <div class="box2">C2</div>
+        <div class="box3">C3</div>
+        <div class="box4">C4</div>
+        <div class="box5">C5</div>
+    </div>
+    <div class="slide">
+        <div class="slidewrap">
+            <div class="s1">C1</div>
+            <div class="s2">C2</div>
+            <div class="s3">C3</div>
+            <div class="s4">C4</div>
+            <div class="s5">C5</div>
+        </div>
+    </div>
+
+</header>
+</body>
+</html>

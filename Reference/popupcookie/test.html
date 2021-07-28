@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <!-- 팝업 제이쿼리 플러그인 하는 방법 -->
+    <!-- cdnjs.com접속 후 jquery-cookie를 검색 -->
+    <!-- 제이쿼리 쿠키안에는 변수에 값을 지정할 수 있다. -->
+    <!-- expire-day를 설정할 수 있다. -->
+    <!-- let 변수명 nopopup1,nopopup2  -->
+    <!-- nonpopup1 =>"Y" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if($.cookie("nopopup1") !="Y"){
+                $("#pop01").show();
+            }else{
+                $("#pop01").hide();
+            }
+            if($.cookie("nopopup2") !="Y"){
+                $("#pop02").show();
+            }else{
+                $("#pop02").hide();
+            }
+        })
+
+        $(function(){
+            $("#close01").click(function(){
+                if(document.frmPopup.pop01.checked){
+                    $.cookie("nopopup1","Y",{expires:1});
+                }
+                $("#pop01").hide();
+            })
+            $("#close02").click(function(){
+                if(document.frmPopup.pop01.checked){
+                    $.cookie("nopopup2","Y",{expires:1});
+                }
+                $("#pop02").hide();
+            })
+        })
+
+    </script>
+    <title>Document</title>
+
+</head>
+<body>
+    <form name="frmPopup">
+        <div id="pop01">
+            <div style="height: 350px;"> 
+            안녕하세요. 늑대털쓴 양입니다.<br>
+            <a href="#"><b>팝업강좌 바로가기</b></a>
+            </div>
+            <div>
+                <input type="checkbox" name="Pop01">오늘 하루 이창을 다시 열지 않음
+                <div id="close01" style="width:100px; margin:0 auto;cursor:pointer">close</div>
+            </div>
+        </div>
+
+        <div id="pop02">
+            <div style="height: 350px;"> 
+            안녕하세요. 늑대털쓴 양입니다.<br>
+            <a href="#"><b>팝업강좌 바로가기</b></a>
+            </div>
+            <div>
+                <input type="checkbox" name="Pop02">오늘 하루 이창을 다시 열지 않음
+                <div id="close02" style="width:100px; margin:0 auto;cursor:pointer">close</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none;}
+a{cursor: pointer;color: inherit;}
+
+#pop01,#pop02{
+    width: 300px; height: 400px;
+    background-color: #3d3d3d; 
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    border: 2px solid #000;
+}
+#pop01{left:100px;}
+#pop02{left:500px;}
